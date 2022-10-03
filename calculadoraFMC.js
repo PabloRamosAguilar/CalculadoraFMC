@@ -49,8 +49,8 @@ function calcularFMC() {
     texto.innerHTML = "Tu FMC es: "+fmc;
     texto.innerHTML += "<br/>Zona de recuperación (60%-70%): "+parseInt(fmc*0.6)+"-"+parseInt(fmc*0.7);
     texto.innerHTML += "<br/>Zona aeróbica (70%-80%): "+parseInt(fmc*0.7)+"-"+parseInt(fmc*0.8);
-    texto.innerHTML += "<br/>Zona anaeróbica (60%-70%): "+parseInt(fmc*0.8)+"-"+parseInt(fmc*0.9);
-    texto.innerHTML += "<br/>Línea Roja (60%-70%): "+parseInt(fmc*0.9)+"-"+fmc;
+    texto.innerHTML += "<br/>Zona anaeróbica (80%-90%): "+parseInt(fmc*0.8)+"-"+parseInt(fmc*0.9);
+    texto.innerHTML += "<br/>Línea Roja (90%-100%): "+parseInt(fmc*0.9)+"-"+fmc;
 
 
 
