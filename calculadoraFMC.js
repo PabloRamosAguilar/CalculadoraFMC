@@ -34,7 +34,6 @@ fechaescribir.innerText += fechahoy;
 function calcularFMC() {
     var fmc
     var edad
-    var sexo
     var texto = document.getElementById("FMC");
     var articulo = document.getElementById("articulo");
 
@@ -48,6 +47,10 @@ function calcularFMC() {
 
     fmc = 220 - edad;
     texto.innerHTML = "Tu FMC es: "+fmc;
+    texto.innerHTML += "<br/>Zona de recuperación (60%-70%): "+parseInt(fmc*0.6)+"-"+parseInt(fmc*0.7);
+    texto.innerHTML += "<br/>Zona aeróbica (70%-80%): "+parseInt(fmc*0.7)+"-"+parseInt(fmc*0.8);
+    texto.innerHTML += "<br/>Zona anaeróbica (60%-70%): "+parseInt(fmc*0.8)+"-"+parseInt(fmc*0.9);
+    texto.innerHTML += "<br/>Línea Roja (60%-70%): "+parseInt(fmc*0.9)+"-"+fmc;
 
 
 
